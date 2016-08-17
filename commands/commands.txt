@@ -1,0 +1,7 @@
+ip access-list extended 101
+remark **** Adecco AF11 class  ****
+remark **** Citrix Ports 1494 & 2598  ****
+10 permit tcp any any eq 1494
+20 permit tcp any any eq 2598
+remark **** RDP Port  ****
+30 permit tcp any any eq 3389
